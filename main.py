@@ -7,9 +7,15 @@
 # Import Logtail client library and deault logging library
 from logtail import LogtailHandler
 import logging
+import sys
+
+# Check for program arguments
+if len(sys.argv) != 2:
+    print("Program requires source token as an argument, run the program as followed\npython main.py <source-token>");
+    sys.exit();
 
 # Create handler
-handler = LogtailHandler(source_token="LhirJVnt2LUpLTLBL9MNTpL1")
+handler = LogtailHandler(source_token=sys.argv[1])
 
 # Create logger
 logger = logging.getLogger(__name__)
