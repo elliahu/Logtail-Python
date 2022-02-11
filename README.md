@@ -2,6 +2,10 @@
 
 Collect logs directly from any Python code, including Django.
 
+**Supported language version:**
+- Python 3.6.5 or newer
+- `pip` 20.0.2 or newer
+
 # Installation
 
 You can install the Logtail python client library using the `pip` command as you would with any other package.
